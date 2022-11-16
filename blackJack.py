@@ -204,7 +204,7 @@ def blackjack():
         game.print_balance(temp_buy_in)
         
         # upis zapisa u bazu podataka (povijest)
-        game_record = ("Blak Jack",  player.return_outcome(), dealer.return_outcome(), game.game_result, temp_buy_in, bet, game.balance)
+        game_record = ("Black Jack",  player.return_outcome(), dealer.return_outcome(), game.game_result, temp_buy_in, bet, game.balance)
         db.insert_record(game_record)
         
         # reset originalnog ukupnog iznosa
